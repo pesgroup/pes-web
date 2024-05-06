@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="space-y-5 md:flex font-worksans flex justify-center flex-col">
               <div>
                 <h1 className="text-white text-4xl p-12 flex justify-center">
-                  Pacific Environmental Solutions
+                  Pacific Environmental Solutions 
                 </h1>
               </div>
 
