@@ -38,14 +38,14 @@ const Services = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="bg-gray-100 py-12 px-24 sm:grid sm:justify-items-center font-worksans text-gray-500">
+      <div className="bg-gray-100 py-12 px-12 sm:grid sm:justify-items-center font-worksans text-gray-500">
         <div className="container">
           {/* Header */}
           <div className="pb-12 text-center space-y-3">
             <h1 data-aos="fade-up" className="text-3xl sm:text-3xl text-left">
               Our Services
             </h1>
-            <p data-aos="fade-up" className=" text-md text-justify py-4">
+            <p data-aos="fade-up" className="text-md text-justify py-4">
               Pacific Environmental Solutions (PES) is at the forefront of
               revolutionizing waste management into sustainable energy solutions
               across the South Pacific. With our patent-pending Waste-to-Energy
