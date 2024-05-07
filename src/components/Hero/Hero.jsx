@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <video className="object-cover w-full h-screen" autoPlay loop muted playsInline>
+        <video className="object-cover w-full h-screen" autoPlay loop playsInline>
           <source src={video} type="video/webm" preload="auto"/>
         </video>
       </div>
