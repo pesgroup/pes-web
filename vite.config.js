@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/",
   plugins: [react()],
-  assetsInclude: ["**/*.WEBM", "**/*.PNG"],
+  assetsInclude: ["**/*.WEBM", "**/*.MP4", "**/*.PNG"],
   resolve: {
     alias: [
       { find: "@assets", replacement: "/src/assets" },
