@@ -1,5 +1,4 @@
 import React from "react";
-
 import SolarPowerIcon from "@mui/icons-material/SolarPower";
 import ChargingStationIcon from "@mui/icons-material/ChargingStation";
 import LocalDrinkIcon from "@mui/icons-material/LocalDrink";
@@ -36,11 +35,11 @@ const ServicesData = [
 
 const Services = () => {
   return (
-    <>
+    <div>
       <span id="services"></span>
       <div className="bg-gray-100 py-12 px-8 md:px-12 sm:grid sm:justify-items-center font-worksans text-gray-500">
         <div className="container">
-          {/* Header */}
+          {/* HEADER */}
           <div className="pb-12 text-center space-y-2">
             <h1 data-aos="fade-up" className="text-3xl sm:text-3xl text-left">
               Our Services
@@ -58,8 +57,7 @@ const Services = () => {
             <hr className="mt-4 h-0.5 border-t-0 bg-gray-300 opacity-50" />
           </div>
 
-          {/* services cards */}
-
+          {/* SERVICES CARD */}
           <div className="grid grid-cols-2 xl:grid-cols-4 justify-items-center text-gray-500">
             {ServicesData.map((service) => (
               <div className="flex justify-center">
@@ -83,7 +81,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

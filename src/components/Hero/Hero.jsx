@@ -9,7 +9,7 @@ const Hero = () => {
           className="object-cover w-full h-screen"
           autoPlay
           loop
-          playsinline
+     
         >
           <source src={video} type="video/MP4" preload="auto" />
         </video>
@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="text-white text-4xl md:text-5xl flex text-left p-8">
           Pacific Environmental Solutions
         </h1>
-        <div className="text-white bg-gray-700 bg-opacity-40 p-4 md:p-8 rounded-xl m-8 text-left mt-4 md:mt-0">
+        <div className="text-white bg-gray-800 bg-opacity-60 p-4 md:p-8 rounded-xl m-8 text-left mt-4 md:mt-0">
           <h1
             // data-aos="fade-up"
             className="text-lg text-white"
