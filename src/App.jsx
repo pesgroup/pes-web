@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../src/index.css"
+// import { ThemeProvider } from "@material-tailwind/react";
 
 // COMPONENT IMPORT
 // import Navbar from "./components/Navbar/Navbar";
