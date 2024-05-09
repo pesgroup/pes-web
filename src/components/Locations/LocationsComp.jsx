@@ -3,7 +3,7 @@ import LocationsCard from "./LocationsCard";
 
 const LocationsData = [
   {
-    id: 1,
+    id: 0,
     branch: "PES Samoa Office",
     address: "Apaula Heights",
     city: "Apia",
@@ -11,7 +11,7 @@ const LocationsData = [
     phone: "+685 767-3000",
   },
   {
-    id: 2,
+    id: 1,
     branch: "PES Solomon Islands Office",
     address: "Kukum Highway",
     city: "Honiara",
@@ -19,7 +19,7 @@ const LocationsData = [
     phone: "+677 777-3465",
   },
   {
-    id: 3,
+    id: 2,
     branch: "PES Tonga Office",
     address: "Nukunuku",
     city: "Nuku'alofa",
@@ -30,24 +30,27 @@ const LocationsData = [
 
 const LocationsComp = () => {
   return (
-    <>
-      <div className="bg-gray-100 text-gray-500 pt-6">
-        <section data-aos="fade-up" className="container font-worksans">
-          <div>
-            <h1 className="m-8 border-l-8 border-blue-300/50 py-2 pl-2 text-3xl">
-              Our Locations
-            </h1>
+    <section className="bg-gray-100 text-gray-600 p-8 md:px-12 font-worksans flex">
+      <div>
+        {/* HEADING */}
+        <div className="border-l-8 border-blue-300/50 py-2 pl-2">
+          <h1 data-aos="fade-up" className="text-3xl">
+            Our Locations
+          </h1>
+        </div>
+
+        <div className="pt-4 text-gray-500 flex align-middle md:justify-start">
+          <div
+            data-aos="fade-up"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-500 text-sm justify-center"
+          >
+            {LocationsData.map((item) => (
+              <LocationsCard key={item.id} {...item} />
+            ))}
           </div>
-          <div className="pt-12 text-gray-500">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-500 text-sm">
-              {LocationsData.map((item) => (
-                <LocationsCard key={item.id} {...item} />
-              ))}
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

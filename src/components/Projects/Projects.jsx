@@ -36,8 +36,8 @@ const Projects = () => {
     pauseOnFocus: true,
   };
   return (
-    <div className="py-10 font-worksans bg-white">
-      <div className="container bg-white">
+    <section>
+      <div className="m-8 font-worksans bg-white">
         {/* PROJECT SECTION */}
         <div
           data-aos="fade-up"
@@ -46,18 +46,18 @@ const Projects = () => {
           <Slider {...settings}>
             {projectData.map(({ id, heading, subheading, text, img }) => {
               return (
-                <div key={id} className="my-6">
+                <div key={id}>
                   {/* card */}
-                  <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl relative">
-                    <img
-                      src={img}
-                      alt=""
-                      className=" sm:w-[200px] object-cover"
-                    />
+                  <div className="flex flex-col gap-5 md:gap-14 p-4 mx-4 rounded-xl relative">
+                    <img src={img} alt="project-image" className="rounded-md" />
                     <div className="space-y-4">
-                      <h1 className="text-2xl text-gray-500">{heading}</h1>
-                      <h2 className="text-gray-500">{subheading}</h2>
-                      <p className="text-gray-500 xl:pr-40">{text}</p>
+                      <h1 className="text-xl text-gray-600">{heading}</h1>
+                      <h2 className="font-semibold text-gray-500">
+                        {subheading}
+                      </h2>
+                      <p className="text-gray-500 text-justify text-sm">
+                        {text}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const Projects = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
